@@ -1,0 +1,141 @@
+#seperatingLine {
+	border-top: 1px solid #67C2E5;
+	clear: both;
+	width: 98%;
+}
+
+#seperatingLineForBlogTabs {
+	border-top: 1px solid #67C2E5;
+	clear: both;
+	width: 100%;
+
+}
+
+#navUL {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navLI {
+	text-align: center;
+}
+
+#navLink {
+	padding: 5px;
+	font-size: 20px;
+	color: #67C2E5;
+	text-decoration: none;
+	font-family: Arial;
+}
+
+#selectCategoryLink {
+	text-decoration: none;
+}
+
+#navLink:hover {
+	color: #166483;
+	font-size: 23px;
+}
+
+#divToRight {
+	float: right;
+	text-align: center;
+	min-width: 15%;
+}
+
+#roundedcorners {
+	border-radius: 50%;
+	border: 2px solid #67C2E5;
+	width: 25%;
+}
+
+#profileName {
+	font-size: 20px;
+	font-family: Arial;
+}
+
+#profileEmail {
+	font-size: 16px;
+	font-family: Arial;
+}
+
+#textBody {
+	width: 70%;
+	max-width: 1100px;
+}
+
+#imageTabBody {
+	width: 80%;
+
+}
+
+#normalText {
+  text-align: left;
+}
+
+.circle {
+	width:72px;
+	height:72px;
+	border-radius:50%;
+	font-size:16px;
+	font-family: Arial;
+	color:#67C2E5;
+	line-height:72px;
+	text-align:center;
+	background:#fff;
+	margin-right: 40px;
+	margin-bottom: 25px;
+}
+
+.circleSelected {
+	color:#fff;
+	background:#67C2E5;
+
+}
+
+.circle:hover {
+	size: +2;
+}
+
+ul#projectCircleList li {
+  display:inline-block;
+}
+
+.imageTab {
+	width: 40%;
+	min-width: 200px;
+
+}
+
+.imageTab:hover {
+	
+}
+
+.blogDate {
+	font-family: Arial;
+}
+
+.blogHeadLine {
+	font-family: Arial;
+}
+
+.blogContent {
+	font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

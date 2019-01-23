@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to mebubi.me</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="MyStyles.css">
+</head>
+<body>
+
+
+
+		<img src="mebubiLogo.png" align="left">
+
+			<br><br><br>
+		<ul id="navUL">
+			<div id="divToRight">
+			<li id="navLI"><a id="navLink" href="contact.html"><b>Contact</b></a></li>
+			</div>
+			<div id="divToRight">
+			<li id="navLI"><a id="navLink" href="blog.html"><b>Blog</b></a></li>	
+			</div>
+			<div id="divToRight">
+			<li id="navLI"><a id="navLink" href="projects.html"><b><font size="+3">Projects</font></b></a></li>
+			</div>
+			<div id="divToRight">
+			<li id="navLI"><a id="navLink" href="index.html"><b>About Me</b></a></li>
+			</div>
+		</ul>
+
+		<hr id="seperatingLine" align="center">
+		<br>
+
+		<ul id="projectCircleList">
+			<center>
+				<li><a href="#" style="text-decoration:none;"><div id="all" class="circle" onclick="onCategorySelect('all')"><b>All</b></div></a></li>
+				<li><a href="#" style="text-decoration:none;"><div id="java" class="circle" onclick="onCategorySelect('java')"><b>Java</b></div></a></li>
+				<li><a href="#" style="text-decoration:none;"><div id="android" class="circle" onclick="onCategorySelect('android')"><b>Android</b></div></a></li>
+				<li><a href="#" style="text-decoration:none;"><div id="ai" class="circle" onclick="onCategorySelect('ai')"><b>AI</b></div></a></li>
+				<li><a href="#" style="text-decoration:none;"><div id="threeD" class="circle" onclick="onCategorySelect('threeD')"><b>3D</b></div></a></li>
+			</center>		
+		</ul>
+
+		<center>
+			<div id="imageTabBody">
+				<a href="blog/crypto/breakitdown.html" title="Break It Down"><img id="breakitdown" class="imageTab" src="bid.png"/></a>
+				<a href="https://play.google.com/store/apps/details?id=com.mebubi.mert.booksandhobbies" title="Books & Hobbies"><img id="booksandhobbies" class="imageTab" src="bh2.png" /></a>
+				<a href="blog/simpsons/main.html"><img id="simpsons" class="imageTab" src="simp.jpeg"/></a>
+				<a href="blog/modeling/furniture.html"><img id="furniture" class="imageTab" src="assets4x3.png"/></a>
+				<a href="#"><img id="sdp" class="imageTab" src="sdp.png"/></a>
+				<a href=""><img id="filler" class="imageTab" src="sample2.png" style="visibility: hidden;" /></a>
+
+			</div>
+		</center>
+
+		<script type="text/javascript">
+			document.getElementById('all').classList.add('circleSelected');
+		</script>
+
+
+		<script type="text/javascript">
+			function onCategorySelect(x) {
+				var simpsons = document.getElementById('simpsons');
+				var sdp = document.getElementById('sdp');
+				var breakitdown = document.getElementById('breakitdown');
+				var booksandhobbies = document.getElementById('booksandhobbies');
+				var furniture = document.getElementById('furniture');
+				var filler = document.getElementById('filler');
+
+				var allButton = document.getElementById('all');
+				var javaButton = document.getElementById('java');
+				var androidButton = document.getElementById('android');
+				var aiButton = document.getElementById('ai');
+				var threeDButton = document.getElementById('threeD');
+
+				if(x == 'all') {
+
+					allButton.classList.add('circleSelected');
+					javaButton.classList.remove('circleSelected');
+					androidButton.classList.remove('circleSelected');
+					aiButton.classList.remove('circleSelected');
+					threeDButton.classList.remove('circleSelected');
+
+					filler.style.display = 'inline';
+					filler.style.visibility = 'hidden';
+
+					simpsons.style.display = 'inline';
+					sdp.style.display = 'inline';
+					breakitdown.style.display = 'inline';
+					booksandhobbies.style.display = 'inline';
+					furniture.style.display = 'inline';
+
+				}
+				else if(x == 'java') {
+					javaButton.classList.add('circleSelected');
+					allButton.classList.remove('circleSelected');
+					androidButton.classList.remove('circleSelected');
+					aiButton.classList.remove('circleSelected');
+					threeDButton.classList.remove('circleSelected');
+
+					filler.style.display = 'none';
+
+					simpsons.style.display = 'none';
+					sdp.style.display = 'inline';
+					breakitdown.style.display = 'inline';
+					booksandhobbies.style.display = 'none';
+					furniture.style.display = 'none';
+
+				}
+				else if(x == 'android') {
+
+					androidButton.classList.add('circleSelected');
+					javaButton.classList.remove('circleSelected');
+					allButton.classList.remove('circleSelected');
+					aiButton.classList.remove('circleSelected');
+					threeDButton.classList.remove('circleSelected');
+
+					filler.style.display = 'none';
+
+					simpsons.style.display = 'none';
+					sdp.style.display = 'none';
+					breakitdown.style.display = 'none';
+					booksandhobbies.style.display = 'inline';
+					furniture.style.display = 'none';
+				}
+				else if(x == 'ai') {
+
+					aiButton.classList.add('circleSelected');
+					javaButton.classList.remove('circleSelected');
+					androidButton.classList.remove('circleSelected');
+					allButton.classList.remove('circleSelected');
+					threeDButton.classList.remove('circleSelected');
+
+					filler.style.display = 'none';
+
+					simpsons.style.display = 'inline';
+					sdp.style.display = 'none';
+					breakitdown.style.display = 'none';
+					booksandhobbies.style.display = 'none';
+					furniture.style.display = 'none';
+				}
+				else if(x == 'threeD') {
+
+					threeDButton.classList.add('circleSelected');
+					javaButton.classList.remove('circleSelected');
+					androidButton.classList.remove('circleSelected');
+					allButton.classList.remove('circleSelected');
+					aiButton.classList.remove('circleSelected');
+
+					filler.style.display = 'none';
+
+					simpsons.style.display = 'none';
+					sdp.style.display = 'none';
+					breakitdown.style.display = 'none';
+					booksandhobbies.style.display = 'none';
+					furniture.style.display = 'inline';
+				}
+
+
+				}
+		
+		</script>
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
